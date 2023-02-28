@@ -1,5 +1,6 @@
 .section-about {
     background-image: conic-gradient(#000066, #000033, #000000);
+    padding: 0 var(--common-padding);
  }
 
  .section-about .greet {
@@ -7,14 +8,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
- }
-
- .section-about .greet-left {
-    transform: translateX(-100px);
- }
-
- .section-about .greet-right {
-    transform: translateX(100px);
  }
 
  .about-me {
@@ -28,7 +21,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.7;
 }
 
@@ -39,4 +32,34 @@
 
 .about-me-line {
     margin-left: 30px;
+    text-align: left;
+}
+
+.about-me-object .text-line {
+   display: block;
+   padding-left: var(--common-padding);
+}
+
+@media only screen and (min-width: 768px) {
+   .section-about {
+      padding: 0;
+   }
+   
+   .section-about .greet-left {
+      transform: translateX(-100px);
+   }
+  
+   .section-about .greet-right {
+      transform: translateX(100px);
+   }
+
+   .about-me-object {
+      font-size: 18px;
+      line-height: 1.7;
+   }
+
+   .about-me-object .text-line {
+      display: inline;
+      padding-left: 0;
+   }
 }
