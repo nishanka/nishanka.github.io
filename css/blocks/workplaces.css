@@ -17,11 +17,6 @@
     color: #ffffff;
  }
 
-.work-experience-title {
-    font-size: 40px;
-    line-height: 1.2;
-}
-
 .work-experience {
     animation: hideBlock 3s ease-in 5s;
     animation-fill-mode: forwards;
@@ -38,15 +33,15 @@
 .slide-content {
     display: flex;
     align-items: stretch;
-    justify-content: center;
+    justify-content: stretch;
     min-height: 100vh;
+    flex-direction: column;
 }
 
 .slide-col {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
     padding: 30px;
 }
 
@@ -70,6 +65,7 @@
     background: #ffffff;
     color: #000066;
     padding-right: 50px;
+    flex-grow: 1;
 }
 
 .slide-col-left ul {
@@ -102,4 +98,30 @@
 
 .section-workplaces .fp-arrow.fp-prev {
     border-width: 25px 25px 25px 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .work-experience-title {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+    
+    .slide-content {
+        display: flex;
+        min-height: 100vh;
+        justify-content: center;
+        flex-direction: row;
+    }  
+    
+    .slide-col {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        padding: 30px;
+    }
+
+    .slide-col-right {
+        flex-grow: initial;
+    }
 }
