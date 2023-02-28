@@ -1,0 +1,214 @@
+.profile {
+    padding: 20px 0;
+}
+
+.profile-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.profile-info,
+.profile-welcome {
+    padding: 0 15px;
+}
+
+.profile-image,
+.profile-image img {
+    border-radius: 50%;
+    transition: var(--border-transition);
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+.profile-image {
+    position: relative;
+    display: block;    
+    overflow: hidden;
+    line-height: 0;
+    border: 2px dotted var(--border-color);
+    border-color: #0000ff #ffff00 #ff0000 #008000;
+    animation-name: changeProfileLinkBorderColor;
+}
+
+.profile-image img {
+    border: 3px solid var(--border-color);
+    border-color: #ff0000 #008000 #0000ff #ffff00;
+    animation-name: changeProfileImgBorderColor;
+}
+
+.profile-image:hover {
+    border-color: #ffff00 #ff0000 #008000 #0000ff;
+    border-style: solid;
+}
+
+.profile-image:hover > img {
+    border-color: #008000 #0000ff #ffff00 #ff0000;
+    border-style: dotted;
+    opacity: 0;
+    transition: var(--opacity-transition);
+}
+
+.profile-image:hover .profile-logo {
+    opacity: 1;
+}
+
+.profile-logo {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: var(--opacity-transition);
+    overflow: hidden;
+}
+
+.profile-logo img {
+    width: 150px;
+    height: 150px;
+    transition: var(--opacity-transition);
+}
+
+@keyframes changeProfileLinkBorderColor {
+    0% {border-color: #ffff00 #ff0000 #008000 #0000ff;}
+    25%  {border-color: #0000ff #ffff00 #ff0000 #008000;}
+    50%  {border-color: #008000 #0000ff #ffff00 #ff0000;}
+    75% {border-color: #ff0000 #008000 #0000ff #ffff00;}
+    100% {border-color: #ffff00 #ff0000 #008000 #0000ff;}
+}
+
+@keyframes changeProfileImgBorderColor {
+    0%  {border-color: #008000 #0000ff #ffff00 #ff0000;}
+    25% {border-color: #ff0000 #008000 #0000ff #ffff00;}
+    50% {border-color: #ffff00 #ff0000 #008000 #0000ff;}
+    75%  {border-color: #0000ff #ffff00 #ff0000 #008000;}
+    100%  {border-color: #008000 #0000ff #ffff00 #ff0000;}
+}
+
+.profile-text h1 {
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 500;
+    margin: 10px 0;
+    background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.profile-text-typed {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 400;
+    margin: 0;
+}
+
+.profile-text-typed #profile-typed { 
+    font-weight: 400;
+    color: #cc0000;
+    text-shadow: 0 0 2px #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+#welcome-text {
+	position: relative;
+    min-height: 100px;
+    height: auto;
+}
+
+#welcome-text h2 {
+    font-family: "Poppins", sans-serif;
+	color: #fff;
+	font-size: 30px;
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+	transform: translate(-50%, -50%);
+    margin: 0;
+}
+
+#welcome-text h2:nth-child(1) {
+	color: transparent;
+	-webkit-text-stroke: 2px #ccc;
+}
+
+#welcome-text h2:nth-child(2) {
+	color: #000066;
+	animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+	0%,
+	100% {
+		clip-path: polygon(
+			0% 45%,
+			16% 44%,
+			33% 50%,
+			54% 60%,
+			70% 61%,
+			84% 59%,
+			100% 52%,
+			100% 100%,
+			0% 100%
+		);
+	}
+
+	50% {
+		clip-path: polygon(
+			0% 60%,
+			15% 65%,
+			34% 66%,
+			51% 62%,
+			67% 50%,
+			84% 45%,
+			100% 46%,
+			100% 100%,
+			0% 100%
+		);
+	}
+}
+
+@media only screen and (orientation: portrait) {
+    .profile-info {
+        margin-bottom: 50px;
+    }
+
+    .profile-info,
+    .profile-welcome {
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .profile-info {
+        flex-direction: row;
+    }
+
+    .profile-info,
+    .profile-welcome {
+        padding: 0;
+    }
+
+    .profile-text {
+        text-align: left;
+        padding-left: 20px;
+    }
+    
+    .profile-text h1 {
+        font-size: 40px;
+    }
+
+    #welcome-text h2 {
+        font-size: 38px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #welcome-text h2 {
+        font-size: 45px;
+    }
+}

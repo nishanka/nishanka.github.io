@@ -1,0 +1,20 @@
+.logo {
+    position: fixed;
+    right: 25px;
+    top: 25px;
+    width: 100px;
+    height: 100px;
+    z-index: 101;
+    opacity: 1;
+    transition: var(--opacity-transition);
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.fp-viewing-0 .logo {
+    opacity: 0;
+    z-index: -1;
+}

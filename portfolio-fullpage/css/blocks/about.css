@@ -1,0 +1,42 @@
+.section-about {
+    background-image: conic-gradient(#000066, #000033, #000000);
+ }
+
+ .section-about .greet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+
+ .section-about .greet-left {
+    transform: translateX(-100px);
+ }
+
+ .section-about .greet-right {
+    transform: translateX(100px);
+ }
+
+ .about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+.about-me-object {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.about-me-object,
+.about-me-object span {
+    word-spacing: 5px;
+}
+
+.about-me-line {
+    margin-left: 30px;
+}

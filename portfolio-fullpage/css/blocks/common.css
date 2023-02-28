@@ -1,0 +1,83 @@
+/* Common Classes used for colors */
+.text-white {
+    color: #ffffff;
+ }
+ .text-blue {
+    color: #0000ff;
+ }
+ 
+ .text-black {
+    color: #000000;
+ }
+ 
+ .text-red {
+    color: red;
+ }
+ 
+ .text-green {
+    color: #009900;
+ }
+ 
+ .text-purple {
+    color: #9932cc;
+ }
+
+/* Basic Styles */
+* {
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 32px;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 1.4;
+}
+
+h3 {
+    font-size: 26px;
+    line-height: 1.3;
+}
+
+h4 {
+    font-size: 22px;
+    line-height: 1.2;
+}
+
+h5 {
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+h6 {
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 10px 0;
+}
+
+a {
+    transition: var(--common-transition);
+}
+
+body {
+    margin: 0;
+}
+
+.section {
+    min-height: 100vh;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Remove Fullpage Styles */
+.fp-watermark {
+    display: none!important;
+}

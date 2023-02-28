@@ -1,0 +1,75 @@
+.skew-content {
+    display: flex;
+    width: 100vw;
+    min-height: 100vh;
+    align-items: stretch;
+}
+
+.skew-half {
+    width: 50%;
+}
+
+.skew-half-left {
+    background: #000066;
+}
+
+.skew-half-right {
+    background: #3d3d3d;
+}
+
+.skew-half-left .skew-half-skewed,
+.skew-half-right .skew-half-skewed {
+    transform: skewX(-18deg);
+    height: 100%;
+    position: absolute;
+    width: 70%;
+}
+
+.skew-half-left .skew-half-skewed {
+    left: -20%;
+    background-color: #000033;
+    color: #ffffff;
+}
+
+.skew-half-right .skew-half-skewed {
+    right: -20%;
+    background-color: #ffffff;
+    color: #000033;
+}
+
+.skew-half-left-content,
+.skew-half-right-content {
+    padding-left: 30%;
+    padding-right: 10%;
+    transform: skewX(18deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.skew-half-left-content {
+    left: -20%;
+    padding-left: 40%;
+}
+
+.skew-half-right-content {
+    right: -20%;
+    padding-left: 5%;
+    padding-right: 40%;
+}
+
+.skew_container  {
+    max-width: 500px;
+    margin: 50px auto;
+    overflow: hidden;
+    padding-bottom: 4%;
+ }
+ 
+ .skew_container .skew_bg .content {
+    color: #fff;
+    font-size: 30px;
+    transform: skew(0deg, -10deg);
+ }
+ 
