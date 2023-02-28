@@ -101,3 +101,11 @@
 .projects-more a:hover {
     background-color: green;
 }
+
+#projectspage .projects-more.projects-more--live {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    display: inline-block;
+    margin-top: 20px;
+}
