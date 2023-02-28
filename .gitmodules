@@ -1,0 +1,3 @@
+[submodule "portfolio-fullpage"]
+	path = portfolio-fullpage
+	url = https://github.com/nishanka/portfolio-fullpage.git
