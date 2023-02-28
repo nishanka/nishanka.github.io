@@ -49,6 +49,23 @@
     height: 100vh;
 }
 
+.skew-half-content-row {
+    margin-bottom: 30px;
+}
+
+.skew-half-content-row:last-of-type {
+    margin-bottom: 0;
+}
+
+.skew-half-content-row ul {
+    text-align: left;
+    margin-top: 0;
+}
+
+.skew-half-content-row ul:last-of-type {
+    margin-bottom: 0;    
+}
+
 .skew-half-left-content {
     left: -20%;
     padding-left: 40%;
