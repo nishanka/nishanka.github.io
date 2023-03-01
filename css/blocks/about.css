@@ -40,7 +40,7 @@
    padding-left: var(--common-padding);
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 640px) {
    .section-about {
       padding: 0;
    }
