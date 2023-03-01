@@ -80,12 +80,9 @@
     max-width: 350px;
 }
 
-.slide-col ul li {
-    margin-bottom: 5px;
-}
-
 .slide-col-left ul li {
     margin-right: 30px;
+    margin-bottom: 5px;
 }
 
 .slide-col-right ul {

@@ -73,6 +73,10 @@ a {
     transition: var(--common-transition);
 }
 
+ul li {
+    margin-bottom: 8px;
+}
+
 .section {
     min-height: 100vh;
     overflow: hidden;
@@ -87,7 +91,7 @@ a {
 @media only screen and (min-width: 640px) {
     body {
         font-size: 16px;
-        line-height: 1.2;
+        line-height: 1.5;
     }
 
     h1 {
@@ -106,7 +110,7 @@ a {
     }
 
     h4 {
-        font-size: 22px;
+        font-size: 20px;
         line-height: 1.2;
     }
 
