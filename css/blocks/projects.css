@@ -8,7 +8,8 @@
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-    min-height: 100vh;
+    min-height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
+    min-height: calc(var(--vh, 1vh) * 100);
     cursor: pointer;
 }
 
