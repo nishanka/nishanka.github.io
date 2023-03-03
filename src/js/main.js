@@ -1,6 +1,6 @@
+setViewPortHeight();
 window.addEventListener("load", setViewPortHeight);
 window.addEventListener("resize", setViewPortHeight);
-setViewPortHeight();
 
 function setViewPortHeight() {
     // Get the viewport height and multiple it by 1% to get a value for a vh unit
