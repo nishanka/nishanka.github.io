@@ -26,13 +26,13 @@
 * {
     box-sizing: border-box;
     font-family: var(--primary-font);
-    font-weight: 300;
 }
 
 body {
     margin: 0;
     font-size: 14px;
     line-height: 1.5;
+    font-weight: 300;
 }
 
 h1 {
@@ -67,6 +67,7 @@ h6 {
 
 h1, h2, h3, h4, h5, h6 {
     margin: 10px 0;
+    font-weight: 300;
 }
 
 a {
@@ -75,6 +76,10 @@ a {
 
 ul li {
     margin-bottom: 8px;
+}
+
+ul li ul li {
+    margin-bottom: 0;
 }
 
 .section {
