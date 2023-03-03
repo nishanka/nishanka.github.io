@@ -1,56 +1,62 @@
 const path = require('path');
 
+// const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+// const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
+
 module.exports = {
-  entry: './src/js/main.js',
-  mode: 'development',
+  entry: {
+    main: [
+        './src/js/main.js',
+        './src/css/fullpage.css',
+        './src/css/main.css'
+    ],
+  },
+  mode: 'none',
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
   },
   module: {
-    rules: [{
-        test: /\.(gif|png|jpe?g|svg)$/i,
+    rules: [
+      {
+        test: /\.(css)$/,
         use: [
-          'file-loader',
-          {
-            loader: 'image-webpack-loader',
-            options: {
-              mozjpeg: {
-                progressive: true,
-              },
-              // optipng.enabled: false will disable optipng
-              optipng: {
-                enabled: false,
-              },
-              pngquant: {
-                quality: [0.65, 0.90],
-                speed: 4
-              },
-              gifsicle: {
-                interlaced: false,
-              },
-              // the webp option will enable WEBP
-              webp: {
-                quality: 75
-              }
-            }
-          },
+          MiniCssExtractPlugin.loader,
+          'css-loader'
         ],
-      }]
+      },
+    //   {
+    //     test: /\.(jpe?g|png|gif|svg)$/i,
+    //     use: [
+    //         {
+    //             loader: 'file-loader',
+    //             options: {
+    //               name: '[name].[ext]',
+    //               outputPath: './images/'
+    //             }
+    //           }
+    //     ]
+    //   },
+    //   {
+    //     test:/\.html$/,
+    //     use: [
+    //       'html-loader'
+    //     ]
+    //   },
+    ],
+  },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: '[name].css',
+    }),
+    // new HtmlWebpackPlugin()
+  ],
+  optimization: {
+    minimizer: [
+      new CssMinimizerPlugin()
+    ],
+    minimize: true,
   }
-//   module: {
-//     rules: [
-//       {
-//         test: /.s?css$/,
-//         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
-//       },
-//     ],
-//   },
-//   optimization: {
-//     minimizer: [
-//       new CssMinimizerPlugin(),
-//     ],
-//     minimize: false,
-//   },
-//   plugins: [new MiniCssExtractPlugin()],
 };
