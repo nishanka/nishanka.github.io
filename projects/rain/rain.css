@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 12px;
+    line-height: 1;
+}
+
+.animated-content {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+}
+
+#binaryAnimation {
+    height: 100%;
+    display: flex;
+    flex-grow: 2;
+    justify-content: space-between;
+    padding: 0;
+    overflow: hidden;
+}
+
+.binary-number {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -100%;
+    animation-name: animateTextPositionTop;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    background: rgb(0,128,0);
+    background: linear-gradient(180deg,  rgba(3,249,3,1) 0%, rgba(0,128,0,0.7) 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+.binary-number span {
+    margin: 2px 0;
+}
+
+.binary-number:nth-of-type(2n) { 
+    margin-left: -2px;
+}
+
+.binary-number:nth-of-type(2n) span { 
+    margin: 3px 0 0;
+}
+
+.binary-number:nth-of-type(10n+1) {
+    /* top: -110%; */
+    animation-duration: 6s;
+    animation-delay: 1s;
+}
+
+.binary-number:nth-of-type(10n+5) {
+    /* top: -120%; */
+    animation-duration: 7s;
+    animation-delay: 2s;
+}
+
+.binary-number:nth-of-type(10n+7) {
+    /* top: -130%; */
+    animation-duration: 8s;
+    animation-delay: 3s;
+}
+
+.binary-number:nth-of-type(10n+9) {
+    animation-duration: 9s;
+    animation-delay: 4s;
+}
+
+.binary-number:nth-of-type(10n+3) {
+    animation-duration: 10s;
+    animation-delay: 5s;
+}
+
+.binary-number:nth-of-type(10n+4) {
+    animation-duration: 11s;
+    animation-delay: 6s;
+}
+
+.binary-number:nth-of-type(10n+2) {
+    animation-duration: 12s;
+    animation-delay: 7s;
+}
+
+.binary-number:nth-of-type(10n+6) {
+    animation-duration: 13s;
+    animation-delay: 8s;
+}
+
+.binary-number:nth-of-type(10n+8) {
+    animation-duration: 14s;
+    animation-delay: 9s;
+}
+
+.binary-number:nth-of-type(10n+8) {
+    animation-duration: 9s;
+    animation-delay: 10s;
+}       
+
+.binary-number:nth-of-type(3n+1) {
+    animation-duration: 7s;
+    animation-delay: 1s;
+}
+
+.binary-number:nth-of-type(3n+1) span { 
+    margin: 4px 0 2px;
+}
+
+.binary-number:nth-of-type(4n+1) {
+    animation-duration: 8s;
+    animation-delay: 4s;
+}
+
+.binary-number:nth-of-type(4n+1) span { 
+    margin: 5px 0 3px;
+}
+
+.binary-number:nth-of-type(5n+1) {
+    animation-duration: 9s;
+    animation-delay: 7s;
+}
+
+.binary-number:nth-of-type(5n+1) span { 
+    margin: 6px 0 2px;
+}
+
+@keyframes animateTextPositionTop {
+    0%   {top: -75%;}
+    25%  {top: -60%;}
+    50%  {top: -40%;}
+    75%  {top: -20%;}
+    100% {top: 0;}
+}
