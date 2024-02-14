@@ -73,11 +73,13 @@
                         <span class="close-details">&times;</span>
                         <div class="project-content">
                             <h3 class="project-title">Portfolio</h3>
-                            <video width="100%" height="auto" muted autoplay loop poster="src/images/portfolio-fullpage.webp">
-                                <source src="src/videos/projects/portfolio-fullpage.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            
+                            <div class="project-details__video">
+                                <video width="100%" height="auto" muted autoplay loop poster="src/images/portfolio-fullpage.webp">
+                                    <source src="src/videos/projects/portfolio-fullpage.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <div class="projects-more projects-more--live"><a href="https://nishanka.github.io/">View Live</a></div>
+                                </div>
                             <h5>Summary</h5>
                             <p>Full screen, fully responsive web application.</p>
                             
@@ -116,7 +118,7 @@
                                 <li><a href="https://github.com/alvarotrigo/fullPage.js" target="_blank">fullpage.js</a></li>
                                 <li><a href="https://github.com/mattboldt/typed.js" target="_blank">typed.js</a></li>
                             </ul>
-                            <div class="projects-more projects-more--live"><a href="https://nishanka.github.io/">Visit Live Site</a></div>
+                            <div class="projects-more projects-more--live"><a href="https://nishanka.github.io/">View Live</a></div>
                         </div>
                     </div>
                 </div>
@@ -177,10 +179,9 @@
                         </div>
                     </div>
                 </div>
-                <!-- cut it from here -->
                 <div class="project">
                     <div class="project-video">
-                        <video width="100%" height="auto" muted autoplay poster="src/images/todolist.webp">
+                        <video width="100%" height="auto" muted autoplay loop poster="src/images/todolist.webp">
                             <source data-src="src/videos/projects/todolist.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
@@ -190,10 +191,15 @@
                         <span class="close-details">&times;</span>
                         <div class="project-content">
                             <h3 class="project-title">To Do List</h3>
-                            <video width="100%" height="auto" muted autoplay poster="src/images/todolist.webp">
-                                <source data-src="src/videos/projects/todolist.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
+                            <div class="project-details__video">
+                                <video width="100%" height="auto" muted autoplay loop poster="src/images/todolist.webp">
+                                    <source data-src="src/videos/projects/todolist.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <div class="projects-more projects-more--live">
+                                    <a href="https://nishanka-to-do-list.netlify.app/" target="_blank">View Live</a>
+                                </div>
+                                </div>
                             <h5>Summary</h5>
                             <p>Simple To Do List web application using React, JavaScript and Bootstrap css.</p>
                             
@@ -249,20 +255,78 @@
                     </div>
                 </div>
                 <div class="project">
-                    <div class="project-image">
-
+                    <div class="project-video">
+                        <video width="100%" height="auto" muted autoplay loop poster="src/images/weather-app-1.webp">
+                            <source data-src="src/videos/projects/weather-app-1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
                     <div class="projects-more open-details" data-related="Project5"><span>View More</span></div>
                     <div id="Project5" class="project-details">
                         <span class="close-details">&times;</span>
                         <div class="project-content">
-                            <h3 class="project-title">Project Title</h3>
+                            <h3 class="project-title">Weather App 01</h3>
+                            <div class="project-details__video">
+                                <video width="100%" height="auto" muted autoplay loop poster="src/images/weather-app-1.webp">
+                                    <source data-src="src/videos/projects/weather-app-1.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <div class="projects-more projects-more--live">
+                                    <a href="https://nishanka-weather-app-1.netlify.app/" target="_blank">View Live</a>
+                                </div>
+                            </div>
+                            <h5>Summary</h5>
+                            <p>Simple Weather application using React(<a href="https://github.com/facebook/create-react-app">Create React App</a>),
+                                <a href="https://www.npmjs.com/package/axios#axios-api">Axios API</a> and <a
+                                    href="https://openweathermap.org/api">Open Weather Map</a> API.
+                            </p>
+                            
+                            <h5>Technical Information</h5>
                             <ul>
-                                <li>HTML5</li>
-                                <li>CSS3</li>
-                                <li>JQuery</li>
+                                <li>React javascript library used to build user interface, and this project runs on Node.js environment.</li>
+                                <li>Use <a href="https://www.npmjs.com/package/axios#axios-api">Axios API</a> to get data from <a
+                                        href="https://openweathermap.org/api">Open Weather Map API</a>.</li>
+                                <li>
+                                    <span>Styles:</span>
+                                    <ul>
+                                        <li>Simple css styles.</li>
+                                        <li>Static background image.</li>
+                                        <li>Semi-transparent background is used to improve the visibility of bottom weather details.</li>
+                                        <li>Horizontal & vertical center-alignments are done using flex.</li>
+                                        <li>Smooth animations for buttons.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span>Used Hooks:</span>
+                                    <ul>
+                                        <li>useState</li>
+                                    </ul>
+                                </li>
+                                <li>Input Validation: You must enter a valid city name. (e.g. London)</li>
                             </ul>
-                            <p>...</p>
+                            <h5>User Experience</h5>
+                            <ul>
+                                <li>Users can search for a valid location/city</li>
+                                <li>View following Weather Data:
+                                    <ul>
+                                        <li>Location</li>
+                                        <li>Temperature</li>
+                                        <li>Weather Image</li>
+                                        <li>Description</li>
+                                        <li>Feels Like</li>
+                                        <li>Humidity</li>
+                                        <li>Wind Speed</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <h5>Resources</h5>
+                            <ul>
+                                <li>Project source code is at <a href="https://github.com/nishanka/pp-react-weather-app-1" target="_blank">github</a>
+                                </li>
+                            </ul>
+                            <div class="projects-more projects-more--live">
+                                <a href="https://nishanka-weather-app-1.netlify.app/" target="_blank">View Live</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -281,10 +345,10 @@
                                 <li>JQuery</li>
                             </ul>
                             <p>Tell about poject here</p>
-                            </div>
-                            </div>
-                            </div>
-                            </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
                             <h3 class="subtitle">Other</h3>
                             <div class="projects">
                                 <div class="project">
@@ -312,8 +376,7 @@
                                                 <li>Uses WebP image format to improve site performance.</li>
                                             </ul>
                                             <div class="projects-more projects-more--live"><a href="https://nishanka.github.io/rain"
-                                                    target="_blank">View Live
-                                                    Demo</a></div>
+                                                    target="_blank">View Live</a></div>
                         </div>
                     </div>
                 </div>

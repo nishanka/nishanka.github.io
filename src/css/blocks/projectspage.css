@@ -117,8 +117,19 @@
     border-bottom: 2px solid #ffffff;
 }
 
-.project-content video {
+.page--projects .project-video video {
     margin: 5px 0;
+}
+
+.project-details__video {
+    position: relative;
+}
+
+#projectspage .project-details__video .projects-more--live {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 20px 20px 0 0;
 }
 
 .project-content h5,
@@ -140,7 +151,7 @@
     }
 
     .page--projects .logo a {
-    width: 80px;
+        width: 80px;
         height: 80px;
     }
     
@@ -153,16 +164,17 @@
         width: calc(100%/3);
         --project-item-width: calc(100%/3);
         height: auto;
-    }    
-                .page--projects .projects {
-                    margin-bottom: 30px;
-                }
-        
-                .close-details {
-                    right: 50px;
-                }
-        
-                .project-content {
-                    margin: 50px;
-                }
+    }  
+
+    .page--projects .projects {
+        margin-bottom: 30px;
+    }
+
+    .close-details {
+        right: 50px;
+    }
+
+    .project-content {
+        margin: 50px;
+    }
 }
