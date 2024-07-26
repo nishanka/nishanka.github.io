@@ -1,0 +1,32 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.pagination a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 48px;
+    height: 48px;
+    background-color: #008000;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+.pagination a:hover {
+    background-color: #FFA500;
+}
+
+.pagination a i {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 600;
+}

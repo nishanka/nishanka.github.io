@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS eCommerce Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/pg-cart.css">
+</head>
+
+<body class="pg-cart">
+    <header class="box-shadow">
+        <a class="header__logo" href="index.html"><img src="img/logo.svg" alt="Logo" /></a>
+        <nav id="Nav" class="header__nav">
+            <span id="NavClose" class="header__nav-close show-in-mobile"><i class=" fa fa-times"></i></span>
+            <ul class="header__nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="hide-in-mobile"><a href="cart.html" class="active"><i class="fa fa-shopping-cart"
+                            aria-hidden="true"></i></a></li>
+            </ul>
+        </nav>
+        <div class="header__mobile-links show-in-mobile">
+            <a class="header__cart-link" href="cart.html"><i class="fa fa-shopping-cart"></i></a>
+            <i id="Hamburger" class="fa fa-outdent header__hamburger"></i>
+        </div>
+    </header>
+    <section class="hero hero--small section-p1">
+        <h2>#cart</h2>
+        <p>Add your coupon code & SAVE upto 70%!</p>
+    </section>
+    <section class="main-content section-p1 cart">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="fa fa-times-circle"></i></a></td>
+                    <td><img src="img/products/f1.jpg" alt=""></td>
+                    <td>Cartoon Astronaut T-Shirts</td>
+                    <td>$118.19</td>
+                    <td><input type="number" name="" value="1" id=""></td>
+                    <td>$118.19</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fa fa-times-circle"></i></a></td>
+                    <td><img src="img/products/f2.jpg" alt=""></td>
+                    <td>Cartoon Astronaut T-Shirts</td>
+                    <td>$124.35</td>
+                    <td><input type="number" name="" value="1" id=""></td>
+                    <td>$124.35</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fa fa-times-circle"></i></a></td>
+                    <td><img src="img/products/f3.jpg" alt=""></td>
+                    <td>Cartoon Astronaut T-Shirts</td>
+                    <td>$106.76</td>
+                    <td><input type="number" name="" value="1" id=""></td>
+                    <td>$106.76</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="cart-add section-p1">
+        <div class="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter Your Coupon">
+                <button class="btn--green">Apply</button>
+            </div>
+        </div>
+        <div class="total">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>$ 335</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>$ 335</strong></td>
+                </tr>
+            </table>
+            <button class="btn--green">Proceed to checkout</button>
+        </div>
+    </section>
+    <footer class="section-p1">
+        <div class="col">
+            <img class="footer-logo" src="img/logo.svg" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong> 562 Wellington Road, Street 32, San Francisco</p>
+            <p><strong>Phone: </strong> +01 2222 365 / (+91) 01 2345 6789</p>
+            <p><strong>Hours: </strong> 10:00 - 18:00, Mon - Sat</p>
+            <div class="footer-follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Orders</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col footer-install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row footer-install__row">
+                <img src="img/pay/app.jpg" alt="">
+                <img src="img/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Follow link(ctrl + click)</p>
+            <img src="img/pay/pay.png" alt="">
+        </div>
+        <div class="footer-copyright">
+            <p>@ 2020, WealthOus Group</p>
+        </div>
+    </footer>
+    <script src='script.js'></script>
+</body>
+
+</html>
