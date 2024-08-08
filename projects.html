@@ -21,6 +21,7 @@
         <div id="projectspage">
             <h3 class="subtitle">My Projects</h3>
             <div class="projects">
+                <!-- START - Project 8 - Microsite -->
                 <div class="project">
                     <div class="project-video">
                         <video width="100%" height="auto" muted autoplay loop poster="src/images/microsite.webp">
@@ -28,8 +29,8 @@
                             Your browser does not support the video tag.
                         </video>
                     </div>
-                    <div class="projects-more open-details" data-related="Project7"><span>View More</span></div>
-                    <div id="Project7" class="project-details">
+                    <div class="projects-more open-details" data-related="Project8"><span>View More</span></div>
+                    <div id="Project8" class="project-details">
                         <span class="close-details">&times;</span>
                         <div class="project-content">
                             <h3 class="project-title">Microsite</h3>
@@ -37,18 +38,21 @@
                                 <source src="src/videos/projects/microsite.mp4" type="video/mp4">
                                 Your browser does not support the video tag.
                             </video>
-
+                    
                             <h5>Summary</h5>
                             <p>Full-screen, single page, fully responsive web application without scrollbars.</p>
-                            
                             <h5>Technical Information</h5>
                             <ul>
-                                <li>React javascript library is used to build the user interface, and this project runs on a Node.js environment.</li>
+                                <li>React javascript library is used to build the user interface, and this project runs on a Node.js
+                                    environment.</li>
                                 <li>Page contents (text, video, and images) are API-consumed from JSON data.</li>
-                                <li>Full-screen HTML5 video (muted and looping) as background with semi-transparent white background overlay.</li>
-                                <li>The text & slide indicators are horizontally & vertically center-aligned using a flexbox layout.</li>
+                                <li>Full-screen HTML5 video (muted and looping) as background with semi-transparent white background
+                                    overlay.</li>
+                                <li>The text & slide indicators are horizontally & vertically center-aligned using a flexbox layout.
+                                </li>
                                 <li>Smooth animations for buttons and links.</li>
-                                <li>Fade-out and fade-in effects for slide transitions upon clicking the navigation and mouse-scrolling the page.</li>
+                                <li>Fade-out and fade-in effects for slide transitions upon clicking the navigation and mouse-scrolling
+                                    the page.</li>
                                 <li>Background image URL changes according to the screen width and orientation.</li>
                             </ul>
 
@@ -60,6 +64,98 @@
                         </div>
                     </div>
                 </div>
+                <!-- END - Project 8 - Microsite -->
+                
+                <!-- START - Project 7 - eCom3 -->
+                <div class="project">
+                    <div class="project-video">
+                        <video width="100%" height="auto" muted autoplay loop poster="src/images/ecom3.webp">
+                            <source src="src/videos/projects/ecom3.webm" type="video/webm">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="projects-more open-details" data-related="Project7"><span>View More</span></div>
+                    <div id="Project7" class="project-details">
+                        <span class="close-details">&times;</span>
+                        <div class="project-content">
+                            <h3 class="project-title">React Shopping Cart</h3>
+                            <div class="project-details__video">
+                                <video width="100%" height="auto" muted autoplay loop poster="src/images/ecom3.webp">
+                                    <source data-src="src/videos/projects/ecom3.webm" type="video/webm">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <div class="projects-more projects-more--live">
+                                    <a href="https://nishanka-ecom3.netlify.app/" target="_blank">View Live</a>
+                                </div>
+                            </div>
+                            <h5>Summary</h5>
+                            <p>Simple Shopping Cart application using React(<a
+                                    href="https://github.com/facebook/create-react-app">Create
+                                    React App</a>),
+                                <a href="https://react-redux.js.org/">React Redux</a> and <a href="https://redux-toolkit.js.org/">Redux
+                                    Toolkit</a>.
+                            </p>
+                
+                            <h5>Technical Information</h5>
+                            <ul>
+                                <li>React javascript library is used to build the user interface, and this project runs on a Node.js
+                                    environment.</li>
+                                <li>Use <a href="https://react-redux.js.org/">React Redux</a> and <a
+                                        href="https://redux-toolkit.js.org/">Redux
+                                        Toolkit</a> to manage Cart Data.</li>
+                                <li>Cart Data stored in Local Storage</li>
+                                <li>Styles: Bootstrap CSS</li>
+                                <li>
+                                    <span>Used Hooks:</span>
+                                    <ul>
+                                        <li><a href="https://react.dev/reference/react/useState">useState</a> from "react"</li>
+                                        <li><a href="https://react.dev/reference/react/useEffect">useEffect</a> from "react"</li>
+                                        <li><a href="https://reactrouter.com/en/main/components/link">Link</a> from "react-router-dom"
+                                        </li>
+                                        <li><a href="https://reactrouter.com/en/main/hooks/use-navigate">useNavigate</a> from
+                                            "react-router-dom"</li>
+                                        <li><a href="https://react-redux.js.org/api/hooks#useselector">useSelector</a> from
+                                            "react-redux"</li>
+                                        <li><a href="https://react-redux.js.org/api/hooks#usedispatch">useDispatch</a> from
+                                            "react-redux"</li>
+                                        <li><a href="https://redux-toolkit.js.org/api/configureStore">configureStore</a> from
+                                            "@reduxjs/toolkit"</li>
+                                        <li><a href="https://redux-toolkit.js.org/api/createSlice">createSlice</a> from
+                                            "@reduxjs/toolkit"</li>
+                                    </ul>
+                                </li>
+                                <!-- <li>Input Validation: You must enter a valid email address.</li> -->
+                            </ul>
+                            <h5>User Experience</h5>
+                            <ul>
+                                <li>Users can add/remove products to/from Cart.</li>
+                                <li>Users can Add/View Shipping Data.</li>
+                                <li>View the following Cart Data:
+                                    <ul>
+                                        <li>Product Image</li>
+                                        <li>Product Title</li>
+                                        <li>Product Price</li>
+                                        <li>Product Quantity</li>
+                                        <li>Product Total Price</li>
+                                        <li>Total Items</li>
+                                        <li>Total Amount</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <h5>Resources</h5>
+                            <ul>
+                                <li>The project source code is on <a href="https://github.com/nishanka/pp-react-shopping-cart-app-3"
+                                        target="_blank">GitHub</a></li>
+                            </ul>
+                            <div class="projects-more projects-more--live">
+                                <a href="https://nishanka-ecom3.netlify.app/" target="_blank">View Live</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END - Project 7 - eCom3 -->
+                
+                <!-- START - Project 6 - Portfolio Fullpage -->
                 <div class="project">
                     <div class="project-video">
                         <video width="100%" height="auto" muted autoplay loop poster="src/images/portfolio-fullpage.webp">
@@ -120,6 +216,9 @@
                         </div>
                     </div>
                 </div>
+                <!-- END - Project 6 - Portfolio Fullpage -->
+                
+                <!-- START - Project 5 - eCom1 JS -->
                 <div class="project">
                     <div class="project-video">
                         <video width="100%" height="auto" muted autoplay loop poster="src/images/js-ecom-1.webp">
@@ -162,7 +261,9 @@
                             </div>
                             </div>
                 </div>
+                <!-- END - Project 5 - eCom1 JS -->
 
+                <!-- START - Project 4 - React To Do List -->
                 <div class="project">
                     <div class="project-video">
                         <video width="100%" height="auto" muted autoplay loop poster="src/images/todolist.webp">
@@ -237,6 +338,9 @@
                         </div>
                     </div>
                 </div>
+                <!-- END - Project 4 - React To Do List -->
+                
+                <!-- START - Project 3 - Weather App 1 -->
                 <div class="project">
                     <div class="project-video">
                         <video width="100%" height="auto" muted autoplay loop poster="src/images/weather-app-1.webp">
@@ -313,6 +417,9 @@
                         </div>
                     </div>
                 </div>
+                <!-- END - Project 3 - Weather App 1 -->
+                
+                <!-- START - Project 2 - Weather App 2 -->
                 <div class="project">
                     <div class="project-video">
                         <video width="100%" height="auto" muted autoplay loop poster="src/images/weather-app-2.webp">
@@ -393,6 +500,9 @@
                         </div>
                     </div>
                 </div>
+                <!-- END - Project 2 - Weather App 2 -->
+                
+                <!-- START - Project 1 - Portfolio V1 -->
                 <div class="project">
                     <div class="project-video">
                         <video width="100%" height="auto" muted autoplay loop poster="src/images/portfolio.webp">
@@ -448,6 +558,8 @@
                         </div>
                     </div>
                 </div>
+                <!-- END - Project 1 - Portfolio V1 -->
+
             </div>
         </div>
         <script src="src/js/projects.js"></script>
