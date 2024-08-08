@@ -71,6 +71,23 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
 
+.text--small {
+    font-size: 13px;
+    line-height: 1.2;
+}
+
+.text--block {
+    display: block;
+}
+
+.mt--small {
+    margin-top: 5px;
+}
+
+.mb--small {
+    margin-bottom: 5px;
+}
+
 a {
     transition: var(--common-transition);
 }
